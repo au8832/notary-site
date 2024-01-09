@@ -14,7 +14,11 @@
 </head>
 <body>
   <!-- Profit! -->
-  <div style="display: flex;">
+  <div style="display: flex; flex-flow: column wrap;">
+    <div style="display:flex; justify-content: center;">
+      <img src="logo.png" width="300px">
+    </div>
+    <div style="flex-flow: column wrap;">
   <zero-md>
     <script type="text/markdown" data-dedent>
 # Oceanside, California Notary Services
@@ -49,9 +53,14 @@ Email / Call / Text to schedule a time with us to notarize documents using below
       .markdown-body {
         font-family: 'Roboto Mono', monospace;
       }
+
+      body {
+        background-color: #f4f3eb;
+      }
     </style>
   </template>
-  </zero-md>    
+  </zero-md>        
+    </div>
     </div>
 </body>
 </html>
