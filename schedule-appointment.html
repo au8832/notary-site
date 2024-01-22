@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oceanside Notary</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+  <!-- Calendly badge widget begin -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Calendly badge widget end -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11468304377">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11468304377');
+  </script>
+
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3F7XLX3Q95"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3F7XLX3Q95');
+</script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          "sans": ["Noto Sans", "sans-serif"]
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col">
+      <div class="flex flex-row divide-y-2 divide-solid">
+        <div class="flex flex-col flex-1">
+          <div class="flex justify-center">
+            <img src="logo.png"  width="300px" />
+          </div>
+          <h1 class="text-2xl md:text-4xl my-2 font-bold ">Oceanside Notary Services</h1>
+          <h2 class="text-xl md:text-2xl ">Experience the convenience of on-demand notary services in Oceanside, CA </h2>
+          <p class="py-3">Introducing a California Notary who brings professionalism and reliability to your doorstep.</p>
+          <hr class="h-1 bg-slate-900"/>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <h1 class="text-3xl my-3 font-semibold">Schedule Appointment</h1>
+        <div class="min-w-80">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/au8832/30min?hide_gdpr_banner=1" style="height:800px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
