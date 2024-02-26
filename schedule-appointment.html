@@ -29,6 +29,11 @@
       gtag('event', name, {
         when: now.toString()
       });
+
+      if(/.*call.*/.test(name)){
+        console.log("log conversion call btn")
+        gtag('event', 'conversion', {'send_to': 'AW-11468304377/H_AeCJTE7JUZEPnfwdwq'});
+      }
     }
   </script>
 
