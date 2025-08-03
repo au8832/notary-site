@@ -33,7 +33,7 @@
             try {
               grecaptcha.execute(recaptcha, {action: 'php_email_form_submit'})
               .then(token => {
-                formData.set('recaptcha-response', token);
+                formData.set('recaptchaResponse', token);
                 php_email_form_submit(thisForm, action, formData);
               })
             } catch(error) {
@@ -85,7 +85,8 @@
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+        const err = (data.error)? data.error : "Unknown";
+        throw new Error('Form submission failed: ' + err); 
       }
     })
     .catch((error) => {
