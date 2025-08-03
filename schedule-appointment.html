@@ -1,97 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Oceanside Notary Services</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Service Details - iLanding Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
   <!-- Calendly badge widget begin -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <!-- Calendly badge widget end -->
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11468304377">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11468304377');
-    gtag('config', 'G-3F7XLX3Q95');
-
-    function btnClick(name) {
-      const now  = new Date();
-      console.log(now.toString());
-      gtag('event', name, {
-        when: now.toString()
-      });
-
-      if(/.*call.*/.test(name)){
-        console.log("log conversion call btn")
-        gtag('event', 'conversion', {'send_to': 'AW-11468304377/H_AeCJTE7JUZEPnfwdwq'});
-      }
-    }
-  </script>
-
-  <!-- Event snippet for Appointments conversion page -->
-  <script>
-    gtag('event', 'conversion', {'send_to': 'AW-11468304377/oszECPes0ooZEPnfwdwq'});
-  </script>
-  
-
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-          "sans": ["Noto Sans", "sans-serif"]
-        }
-      }
-    }
-  </script>
+  <!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-  <div class="container mx-auto px-4">
-    <div class="flex flex-col">
-      <div class="flex flex-row divide-y-2 divide-solid">
-        <div class="flex flex-col flex-1">
-          <div class="flex justify-center">
-            <a href="https://www.osidenotary.com">
-              <img src="logo.png"  width="300px" />
-            </a>
-          </div>
-          <p class="text-xl">Phone: <a onclick="btnClick('call_hdr_link_click')" href="tel:760-310-2722" class="text-blue-600 font-semibold">760-310-2722</a></p>
-          <p class="text-xl">Email: <a onclick="btnClick('email_hdr_link_click')" href="mailto:info@osidenotary.com" class="text-blue-600 font-semibold">info@osidenotary.com</a></p>
-          <hr class="h-1 bg-slate-900"/>
-          <h1 class="text-2xl md:text-4xl my-2 font-bold ">Oceanside Notary Services</h1>
-          <h2 class="text-xl md:text-2xl ">Experience the convenience of on-demand notary services in Oceanside, CA </h2>
-          <p class="pt-1">Introducing a California Notary Public who brings professionalism and reliability to your doorstep.</p>
-          <p class="pb-4">Notary Public near Oceanside, Vista, Carlsbad, California.</p>
-          <hr class="h-1 bg-slate-900"/>
-        </div>
-      </div>
-      <div class="flex flex-col">
-        <h1 class="text-3xl my-3 font-semibold">Schedule Appointment</h1>
-        <div class="min-w-80">
-            <div class="calendly-inline-widget" data-url="https://calendly.com/au8832/30min?hide_gdpr_banner=1" style="height:1200px;"></div>
-        </div>
-      </div>
-    </div>
 
-    <div class="fixed container mx-auto px-4 top-8 max-sm:hidden">
-      <div class="flex flex-row-reverse">
-        <div class="flex">
-          <a onclick="btnClick('call_btn_desktop_appt_click')" href="tel:760-310-2722" class="bg-teal-500 rounded ring ring-slate-700 block w-48 h-12 text-center py-3">Call Now: 760-310-2722</a>
-        </div>
+<body class="service-details-page">
+
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.jpg" alt="">
+        <h1 class="sitename">Oceanside Notary Services</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#contact">Contact</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>Schedule Appointment</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Schedule Appointment</li>
+          </ol>
+        </nav>
       </div>
-    </div>
-    
-    <div class="block fixed top-8 right-8 md:hidden">
-      <a onclick="btnClick('call_btn_appt_click')" href="tel:760-310-2722" class="bg-teal-500 rounded ring ring-slate-700 block w-28 h-12 text-center py-3">Call Now</a>
-    </div>
-  </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container">
+
+        <div class="row gy-5 justify-content-center">
+          <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/au8832/30min?hide_gdpr_banner=1" style="height:1200px;"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
